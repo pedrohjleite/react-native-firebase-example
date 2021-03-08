@@ -1,10 +1,20 @@
 import 'react-native-gesture-handler';
 
 import React from 'react';
-import {View} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import AppNavigation from './navigations/AppNavigation';
+import { AuthProvider } from './hooks/auth';
+
+declare const global: { HermesInternal: null | {} };
 
 const App: React.FC = () => {
-  return <View />;
+  return (
+    <NavigationContainer>
+      <AuthProvider>
+        <AppNavigation />
+      </AuthProvider>
+    </NavigationContainer>
+  );
 };
 
 export default App;
