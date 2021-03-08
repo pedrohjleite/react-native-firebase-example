@@ -13,9 +13,11 @@ const Login: React.FC = () => {
       <ItemsContainer>
         <Input
           placeholder="Username"
+          autoCapitalize="none"
           onChangeText={(value) => setUsername(value)}
         />
         <Input
+          autoCapitalize="none"
           placeholder="Password"
           onChangeText={(value) => setPassword(value)}
         />

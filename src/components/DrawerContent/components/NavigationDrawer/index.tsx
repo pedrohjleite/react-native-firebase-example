@@ -5,7 +5,7 @@ import {
   DrawerContentOptions,
 } from '@react-navigation/drawer';
 
-import { RectButton } from 'react-native-gesture-handler';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import {
   Container,
@@ -23,57 +23,17 @@ const NavigationDrawer: React.FC<
       <GhostContainer>
         <ItemsContainer>
           <Item>
-            <RectButton
+            <TouchableOpacity
               onPress={() =>
-                navigation.navigate('Store', {
-                  screen: 'Favourites',
-                })}
-            >
-              <ItemText>Favoritos</ItemText>
-            </RectButton>
-          </Item>
-          <Item>
-            <RectButton
-              onPress={() =>
-                navigation.navigate('Feed', {
-                  screen: 'Notifications',
-                })}
-            >
-              <ItemText>Notificações</ItemText>
-            </RectButton>
-          </Item>
-
-          <Item>
-            <RectButton
-              onPress={() =>
-                navigation.navigate('Vitrines', {
-                  screen: 'AddTreePicture',
-                })}
-            >
-              <ItemText>Minha vitrine</ItemText>
-            </RectButton>
-          </Item>
-
-          <Item>
-            <RectButton
-              onPress={() =>
-                navigation.navigate('Store', {
-                  screen: 'PersonalInfo',
-                })}
-            >
-              <ItemText>Informações pessoais</ItemText>
-            </RectButton>
-          </Item>
-
-          <Item>
-            <RectButton
-              onPress={() =>
-                navigation.navigate('Store', {
-                  screen: 'MyOrders',
-                })}
-            >
-              <ItemText>Pedidos</ItemText>
-            </RectButton>
+                navigation.navigate('TabNavigation', {
+                  screen: 'ThreeAndFour',
+                  params: {
+                    screen: 'StackFour',
+                  },
+                })
+              }>
+              <ItemText>Stack Four</ItemText>
+            </TouchableOpacity>
           </Item>
         </ItemsContainer>
       </GhostContainer>

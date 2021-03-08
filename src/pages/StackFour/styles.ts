@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
-  background: lightsalmon;
+  background-color: lightskyblue;
   justify-content: center;
   align-items: center;
   padding: 20px;

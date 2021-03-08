@@ -2,9 +2,10 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
-  background-color: blueviolet;
+  background-color: lightpink;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 `;
 
 export const Image = styled.Image`

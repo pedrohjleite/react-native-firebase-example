@@ -6,7 +6,7 @@ import StackTwo from '../../pages/StackTwo';
 
 const Stack = createStackNavigator();
 
-const FeedStackNavigator: React.FC = () => {
+const OneAndTwoStackNavigator: React.FC = () => {
   return (
     <Stack.Navigator
       initialRouteName="StackOne"
@@ -17,4 +17,4 @@ const FeedStackNavigator: React.FC = () => {
   );
 };
 
-export default FeedStackNavigator;
+export default OneAndTwoStackNavigator;

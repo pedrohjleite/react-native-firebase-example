@@ -6,6 +6,7 @@ import { SafeAreaView } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 
 import OneAndTwoStackNavigator from './Stacks/OneAndTwoStackNavigator';
+import ThreeAndFourStackNavigator from './Stacks/ThreeAndFourStackNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -48,8 +49,8 @@ const TabNavigation: React.FC = () => {
           component={OneAndTwoStackNavigator}
         />
 
-        {/* <Tab.Screen
-          name="Search"
+        <Tab.Screen
+          name="ThreeAndFour"
           options={{
             tabBarIcon: ({ focused }) => (
               <Icon
@@ -59,8 +60,8 @@ const TabNavigation: React.FC = () => {
               />
             ),
           }}
-          component={SearchStackNavigator}
-        /> */}
+          component={ThreeAndFourStackNavigator}
+        />
       </Tab.Navigator>
     </SafeAreaView>
   );

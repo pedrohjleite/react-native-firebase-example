@@ -42,9 +42,10 @@ const DrawerNavigator: React.FC = () => {
       drawerStyle={initRender && { width: 0 }}
       screenOptions={{
         drawerIcon: () => <Icon name="menu" />,
-      }}>
+      }}
+    >
       <Drawer.Screen
-        options={{ swipeEnabled: false }}
+        options={{ swipeEnabled: true }}
         name="TabNavigation"
         component={TabNavigation}
       />

@@ -15,7 +15,7 @@ export const ItemsContainer = styled.View``;
 
 export const Item = styled.View`
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-right: 20px;
 
   border-bottom-width: 1px;
