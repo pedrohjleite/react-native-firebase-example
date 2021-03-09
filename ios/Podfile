@@ -21,6 +21,11 @@ target 'FirebaseExample' do
 #   post_install do |installer|
 #     flipper_post_install(installer)
 #   end
+
+pod 'Firebase/Analytics'
+pod 'Firebase/Crashlytics'
+pod 'Firebase/Performance'
+
 end
 
 target 'FirebaseExample-tvOS' do
